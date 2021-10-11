@@ -180,4 +180,3 @@ JOIN PortfolioProject..CovidVaccinations AS Vacc
 WHERE Deaths.continent IS NOT NULL
 
 SELECT * FROM PercentPopulationVaccinated 
-

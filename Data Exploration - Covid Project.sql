@@ -65,16 +65,6 @@ GROUP BY location
 ORDER BY TotalDeathCount DESC 
 -- Highest death count is in Europe, with approx. 1.2 million deaths
 
--- CORRECT CODE
-
-
---OTHER CONTINENT CODE BELOW:
-SELECT continent, MAX(cast(total_deaths AS INT)) AS TotalDeathCount
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-GROUP BY continent 
-ORDER BY TotalDeathCount DESC 
---
 
 
 --Cumulative Global Numbers over time 

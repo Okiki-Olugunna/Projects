@@ -1,5 +1,4 @@
-
---Data Exploration of covid deaths
+--Data Exploration of covid data
 
 SELECT * FROM PortfolioProject..CovidDeaths
 ORDER BY 3, 4

@@ -42,7 +42,6 @@ FROM PortfolioProject..CovidDeaths
 GROUP BY Location, Population
 ORDER BY CasePercentage DESC
 -- Seychelles has the highest case percentage compared to their population, at 22%, however they also have a low population (approx. 99,000) 
--- Interestingly, the entire continent of Africa has had less infections (X) & also has a lower case percentage (X) than X (X infections, X%)
 
 
 --Looking at countries with the Highest Death Count per Population

@@ -97,27 +97,4 @@ GROUP BY arrival_date_year, hotel
 
 
 
---------------------------------------------------------------------------------------------------------------------------
--- Certain customers got a discount because of the market segment
-SELECT * FROM dbo.market_segment 
-
-
--- Joining the market segment table to the hotel table 
-WITH Hotels AS (
-SELECT * FROM dbo.[2018]
-UNION
-SELECT * FROM dbo.[2019]
-UNION
-SELECT * FROM dbo.[2020]
-)
-
-SELECT * FROM Hotels
-LEFT JOIN dbo.market_segment 
-ON Hotels.market_segment = market_segment.market_segment
-LEFT JOIN meal_cost 
-on meal_cost.meal = Hotels.meal
-
-
-
-
-
+--- To see the visualisation of this dataset go to: https://public.tableau.com/views/ElDivertidoHotel/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link

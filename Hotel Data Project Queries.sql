@@ -3,7 +3,7 @@
 USE HotelProject
 
 
--- adding the tables together because they were in different exceel sheets, doing this puts the data from each year is into one table  
+-- adding the tables together because they were in different excel sheets, doing this puts the data from each year is into one table  
 SELECT * FROM dbo.[2018]
 UNION
 SELECT * FROM dbo.[2019]
@@ -94,7 +94,3 @@ GROUP BY arrival_date_year, hotel
 
 -- Yes, the Hotel revenue is growing for each Hotel, however it seems as though rvenue growth took a hit in 2020,
 --- Most likely attributed to covid regulations 
-
-
-
---- To see the visualisation of this dataset go to: https://public.tableau.com/views/ElDivertidoHotel/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link

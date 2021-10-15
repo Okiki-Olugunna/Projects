@@ -130,12 +130,12 @@ SELECT * FROM ..[5YrsData]
 -- Finding the average house price (general) 
 SELECT AVG(price_paid)
 FROM ..[5YrsData]
--- £342774.815
+-- Â£342774.815
 
 --Rounding this to 2 decimal places
 SELECT ROUND(AVG(price_paid), 2) AS Average_Price
 FROM ..[5YrsData]
--- Average house price (general) = £342774.82
+-- Average house price (general) = Â£342774.82
 
 
 -- Finding the average house price by House Type 
@@ -144,14 +144,14 @@ FROM ..[5YrsData]
 GROUP BY property_type 
 ORDER BY Average_Price DESC
 
--- So Semi-detached houses are the most expensive at £415562.62
+-- So Semi-detached houses are the most expensive at Â£415562.62
 
 --I'm interested in finding out what the highest price paid was, let's see
 SELECT property_type, ROUND(MAX(price_paid), 2) AS Average_Price 
 FROM ..[5YrsData] 
 GROUP BY property_type 
 ORDER BY Average_Price DESC
--- Came out as £500,000 - which reminds me that I put that
+-- Came out as Â£500,000 - which reminds me that I put that
 -----as a filter on the HM Land Registry website when I was 
 -------pulling this data 
 
@@ -173,7 +173,6 @@ ORDER BY new_build DESC
 
 -- going to turn 'yes' into 1 and 'no' into 0
 -- using a temp table for this
-
 
 
 SELECT *  
@@ -206,3 +205,4 @@ ORDER BY total_new_builds DESC
 -- Highest number of new builds in the past 5 years has been in Newham
 --- 4487 new builds
 --Followed by Tower Hamlets(3393) and Greenwich(2388)
+
